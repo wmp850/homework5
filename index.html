@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--
+    Homework 5 - Personal Portfolio Layout Upgrade
+    Author: William Mitchell Peterson
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Mitchell Peterson - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Step 4: Fixed Header at the top of the viewport -->
+    <header class="fixed-header">
+        <h1>William Mitchell Peterson</h1>
+        <h2>Remote Field Technician | Computer Science Student | Aspiring Game Designer</h2>
+    </header>
+
+    <!-- Step 1: Flexbox Navigation Bar below/beside layout -->
+    <nav class="nav-bar">
+        <a href="#about">Who I Am</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">My Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Step 2: Flexbox Main Content Container -->
+    <main class="main-content">
+        
+        <!-- About Me Section -->
+        <section id="about" class="content-section">
+            <h3>Who I Am</h3>
+            <p>
+                Hello, my name is William Mitchell Peterson and I have lived in
+                Arizona my whole life. I have over a decade of hands-on experience
+                in field services, telecommunications, and technical work.
+                I currently work as a Remote Field Technician for Dish/EchoStar
+                and am pursuing a Bachelor's Degree in Computer Science at
+                Northern Arizona University.
+            </p>
+            <p>
+                Although I am still developing my computer science skills, I bring
+                a strong background in technical troubleshooting, customer service,
+                networking, hardware installation, and problem solving. I enjoy
+                learning about new technologies and hope to use my education to
+                build a career in the technology industry, with interests including
+                video game design and software development.
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="content-section">
+            <h3>Education</h3>
+            <div class="table-responsive">
+                <table border="1">
+                    <tr>
+                        <th>Institution</th>
+                        <th>Degree</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Northern Arizona University</td>
+                        <td>Bachelor of Science in Computer Science</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Coconino Community College</td>
+                        <td>Associate's Degree in General Studies - Science</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Coconino High School</td>
+                        <td>General Education Diploma</td>
+                        <td>Completed</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="content-section">
+            <h3>Experience</h3>
+            <div class="table-responsive">
+                <table border="1">
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Duration</th>
+                    </tr>
+                    <tr>
+                        <td>Dish/EchoStar</td>
+                        <td>Remote Field Technician</td>
+                        <td>May 2026 - Present</td>
+                    </tr>
+                    <tr>
+                        <td>NovaKinetics Aerosystems</td>
+                        <td>Composite Technician</td>
+                        <td>January 2024 - February 2026</td>
+                    </tr>
+                    <tr>
+                        <td>TriState Communications</td>
+                        <td>Cable Technician</td>
+                        <td>August 2021 - December 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Legacy Beverage / Kalil Bottling Company</td>
+                        <td>Merchandiser</td>
+                        <td>April 2020 - July 2021</td>
+                    </tr>
+                    <tr>
+                        <td>Arizona Central Credit Union</td>
+                        <td>Teller</td>
+                        <td>July 2017 - June 2018</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Step 3: Skills Section upgraded to CSS Grid layout groups -->
+        <section id="skills" class="content-section">
+            <h3>My Skills</h3>
+
+            <h4>Technical Skills</h4>
+            <ul class="skills-grid-container">
+                <li class="grid-item featured-skill">Broadband Installation (Featured)</li>
+                <li class="grid-item">Fiber to the Home</li>
+                <li class="grid-item">Wireless Communications</li>
+                <li class="grid-item">Premise Troubleshooting</li>
+                <li class="grid-item">Cable Systems</li>
+                <li class="grid-item">Technical Documentation</li>
+            </ul>
+
+            <h4>Certifications</h4>
+            <ol class="skills-grid-container">
+                <li class="grid-item">Broadband Installation</li>
+                <li class="grid-item featured-skill">Fiber to the Home (Featured)</li>
+                <li class="grid-item">Tech Essentials</li>
+                <li class="grid-item">Wireless Communications</li>
+                <li class="grid-item">Premise Troubleshooting</li>
+                <li class="grid-item">Customer Satisfaction</li>
+            </ol>
+
+            <h4>Professional Skills</h4>
+            <ul class="skills-grid-container">
+                <li class="grid-item">Customer Service</li>
+                <li class="grid-item">Team Collaboration</li>
+                <li class="grid-item">Inventory Management</li>
+                <li class="grid-item featured-skill">Technical Troubleshooting (Featured)</li>
+                <li class="grid-item">Problem Solving</li>
+            </ul>
+        </section>
+
+        <!-- Step 3: Projects Section upgraded from Floats to a clean CSS Grid layout -->
+        <section id="projects" class="content-section">
+            <h3>Projects</h3>
+            <h4>Project Interests</h4>
+            <p>
+                While I have no Projects as of yet these are my interests that I have in computer Science and what I would like to work on in the future.
+            </p>
+
+            <div class="projects-grid-gallery">
+                <figure class="project-card">
+                    <img src="app.jpg" alt="App development">
+                    <figcaption>App development</figcaption>
+                </figure>
+
+                <!-- Featured item spanning multiple columns -->
+                <figure class="project-card featured-project">
+                    <img src="game.jpg" alt="Video game design">
+                    <figcaption>Video game design (Primary Focus)</figcaption>
+                </figure>
+
+                <figure class="project-card">
+                    <img src="ai.jpg" alt="AI development/design">
+                    <figcaption>AI development/design</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h3>Contact Information</h3>
+            <p>Phone Number: <a href="tel:9286069997">(928) 606-9997</a></p>
+            <p>Email: <a href="mailto:wmp850@gmail.com">wmp850@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com" target="_blank">My GitHub Profile</a></p>
+        </section>
+
+        <!-- Resume Download Button Section -->
+        <section class="content-section inline-resume">
+            <h3>My Resume</h3>
+            <p>For additional information about my education, experience, certifications, and skills, download my resume below.</p>
+            <p>
+                <a href="William Peterson Resume.pdf" download class="resume-button">
+                    Download William Mitchell Peterson's Resume
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Step 4: Fixed Footer at the bottom of the viewport -->
+    <footer class="fixed-footer">
+        <p>&copy; 2026 William Mitchell Peterson | Computer Science Portfolio</p>
+    </footer>
+
+</body>
+</html>
